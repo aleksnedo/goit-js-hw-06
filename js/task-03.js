@@ -14,11 +14,9 @@ const images = [
 ];
 
 const imagesRef = document.querySelector(".gallery");
-imagesRef.style.listStyle = "none";
-imagesRef.style.display = "flex";
 
 const listItems = images.map(({ url, alt }) => {
-  return `<li><img src="${url}" alt="${alt}"></li>`;
+  return `<li class="gallery-item"><img src="${url}" alt="${alt}" class="gallery-img"></li>`;
 });
 
 const markup = listItems.join("");
